@@ -8,9 +8,38 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="todo">
+    <header class="todo__header">
+      <h1 class="todo__title">Добро пожаловать в планировщик задач!</h1>
+      <h2 class="todo__title_2">Ваши задачи на сегодня:</h2>
+      <form class="todo__form">
+        <input class="todo__input" type="text" placeholder="Добавить задачу" auto♦focus />
+        <button type="button" class="btn btn-secondary btn-md  todo__button">Добавить задачу </button>
+      </form>
+    </header>
 
-  </header>
+    <main class="todo__main">
+      <ul class="todo__list">
+        <!-- Пример задачи -->
+        <li class="todo__item todo__item--completed">
+          <span class="todo__text">Пример выполненной задачи</span>
+          <button class="todo__remove-btn" type="button">Удалить</button>
+        </li>
+        <li class="todo__item">
+          <span class="todo__text">Пример новой задачи</span>
+          <button class="todo__remove-btn" type="button">Удалить</button>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="todo__footer">
+      <span class="todo__count">Осталось: 1</span>
+      <button class="todo__clear-btn" type="button">Очистить выполненные</button>
+    </footer>
+  </div>
+
+
+
 
 </body>
 
